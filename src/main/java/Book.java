@@ -3,7 +3,7 @@ import java.io.Serializable;
 public class Book implements Serializable {
     private String isbn;
     private String title;
-    private String author;
+    transient private String author;
     private int price;
 
     public Book(String isbn, String title, String author, int price) {
